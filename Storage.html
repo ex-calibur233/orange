@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // localStorage
+
+    // 永久保存  不和服务器交互
+
+    // 增
+    localStorage.setItem("用户名", "orange");
+
+    // 查
+    console.log(localStorage.getItem("用户名"));
+
+    // 删指定
+    localStorage.removeItem("用户名");
+
+    // 删全部
+    localStorage.clear()
+
+    // sessionStorage
+
+    // 浏览器关闭删除  不和服务器交互
+
+    // 增
+    sessionStorage.setItem("用户名", "orange");
+
+    // 查
+    console.log(sessionStorage.getItem("用户名"));
+
+    // 删指定
+    sessionStorage.removeItem("用户名");
+
+    // 删全部
+    sessionStorage.clear()
+</script>
+
+</html>
