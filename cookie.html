@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // var date = new Date();
+    // date.setFullYear(date.getFullYear() + 1);
+    // document.cookie = "zhanghao=123;expires=" + date.toUTCString()
+    // document.cookie = "mima=123;expires=" + date.toUTCString()
+    // var cookie = document.cookie;
+    // cookie = cookie.replace(/\s/g, "");
+    // cookie = cookie.split(";")
+    // var arr = [];
+    // var obj = {};
+    // cookie.forEach(function (item, index) {
+    //     arr = item.split("=");
+    //     obj[arr[0]] = arr[1]
+    // })
+    // date.setFullYear(date.getFullYear() - 1);
+    // document.cookie = "zhanghao=123;expires=" + date.toUTCString()
+    // document.cookie = "mima=123;expires=" + date.toUTCString()
+
+    function Cookie() { }
+    // 增
+    // key = 请输入用户名 ， value = 用户名 ， day = 保存时间（天），
+    Cookie.prototype.setCookie = function (key, value, day) {
+        var date = new Date();
+        date.setDate(date.getDate() + day);
+        document.cookie = key + "=" + value + ";expires=" + date.toUTCString();
+    }
+    // 删
+    Cookie.prototype.removeCookie = function (key) {
+        this.setCookie(key, "1", -1)
+    }
+    // 查
+    Cookie.prototype.getCookie = function (key) {
+        var cookie = document.cookie;
+        cookie = cookie.replace(/\s/g, "");
+        cookie = cookie.split(";")
+        var arr;
+        var obj = {};
+        cookie.forEach(function (item, index) {
+            arr = item.split("=");
+            obj[arr[0]] = arr[1]
+        })
+        return obj[key]
+    }
+    // 使用方法
+    var cookie = new Cookie();
+    // 增
+    cookie.setCookie("1", "2", 1) 
+    // 删
+    console.log(cookie.getCookie("1")) 
+    // 查
+    cookie.removeCookie("1")
+</script>
+
+</html>
