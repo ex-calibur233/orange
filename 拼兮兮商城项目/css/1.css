@@ -334,6 +334,7 @@ footer p {
     font-size: 14px;
     color: #333333;
     background-color: #f1f1f1;
+    text-align: center;
 }
 .bg1 td {
     font-size: 12px;
@@ -349,6 +350,7 @@ footer p {
     line-height: 32px;
     border: 1px solid #dddddd;
     background-color: #f0f0f0;
+    user-select: none;
 }
 .bg1 td .a1 {
     width: 38px;
@@ -614,4 +616,9 @@ footer p {
 .yemeify samp:hover {
     background-color: #d6004d;
     color: #fff;
+}
+td img {
+    margin: auto;
+    width: 70px;
+    height: 55px;
 }

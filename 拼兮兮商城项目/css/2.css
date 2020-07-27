@@ -1,4 +1,5 @@
 /* 首页 */
+
 .sy1 .div2 {
     margin: auto;
     width: 960px;
@@ -69,6 +70,7 @@
 
 }
 .text {
+    display: block;
     width: 100%;
     height: 360px;
     margin-top: 30px;
@@ -268,7 +270,14 @@
 /* 产品详情页 */
 
 .xqy1 .div1 img {
-    border: 1px solid #dddddd;
+    border: 5px solid #dddddd;
+    width: 420px;
+    height: 420px;
+    cursor: pointer;
+}
+.xqy1 .div1 .d1 img {
+    width: 90px;
+    height: 90px;
 }
 .xqy1 .div1 .d1 {
     width: 421px;
@@ -281,7 +290,7 @@
    
 }
 .xqy1 .div2 h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: #666666;
     padding-bottom: 20px;
 }
@@ -364,7 +373,8 @@
     margin-top: 30px;
 }
 .guc1 .div1 {
-    margin-left: 40px;
+    margin: auto;
+    width: 930px;
 }
 .guc1 .d1 {
     text-align: right;

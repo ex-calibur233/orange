@@ -24,17 +24,17 @@ $.ajax({
             $(".nrzs1").html(
                 $(".nrzs1").html() +
                 `
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="text text1">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a class="text text1" href="./cpxqy.html?yousb=${atem.item_id}" style="text-decoration: none;">
                         <img src="${atem.pict_url}" alt="">
                         <span class="yj">${atem.zk_final_price}￥</span>
                         <del class="xj">${atem.reserve_price}￥</del>
                         <p>${atem.short_title}</p>
                         <div class="ljnr">
-                            <a class="ljzx" href="${atem.item_url}">立即购买</a>
-                            <a class="dp" href="">${atem.shop_title}</a>
+                            <span class="ljzx" href="${atem.item_url}">立即购买</span>
+                            <span class="dp" href="">${atem.shop_title}</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                     `
             )
@@ -65,18 +65,18 @@ $(".yemeify>span").click(function () {
                 $(".nrzs1").html(
                     $(".nrzs1").html() +
                     `
-                        <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="text text1">
-                            <img src="${atem.pict_url}" alt="">
-                            <span class="yj">${atem.zk_final_price}￥</span>
-                            <del class="xj">${atem.reserve_price}￥</del>
-                            <p>${atem.short_title}</p>
-                            <div class="ljnr">
-                                <a class="ljzx" href="${atem.item_url}">立即购买</a>
-                                <a class="dp" href="">${atem.shop_title}</a>
-                            </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a class="text text1" href="./cpxqy.html?yousb=${atem.item_id}" style="text-decoration: none;>
+                        <img src="${atem.pict_url}" alt="">
+                        <span class="yj">${atem.zk_final_price}￥</span>
+                        <del class="xj">${atem.reserve_price}￥</del>
+                        <p>${atem.short_title}</p>
+                        <div class="ljnr">
+                            <span class="ljzx" href="${atem.item_url}">立即购买</span>
+                            <span class="dp" href="">${atem.shop_title}</span>
                         </div>
-                    </div>
+                    </a>
+                </div>
                         `
                 )
             })
@@ -108,18 +108,18 @@ $(".yemeify>samp").click(function () {
                     $(".nrzs1").html(
                         $(".nrzs1").html() +
                         `
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="text text1">
-                                <img src="${atem.pict_url}" alt="">
-                                <span class="yj">${atem.zk_final_price}￥</span>
-                                <del class="xj">${atem.reserve_price}￥</del>
-                                <p>${atem.short_title}</p>
-                                <div class="ljnr">
-                                    <a class="ljzx" href="${atem.item_url}">立即购买</a>
-                                    <a class="dp" href="">${atem.shop_title}</a>
-                                </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a class="text text1" href="./cpxqy.html?yousb=${atem.item_id}" style="text-decoration: none;>
+                            <img src="${atem.pict_url}" alt="">
+                            <span class="yj">${atem.zk_final_price}￥</span>
+                            <del class="xj">${atem.reserve_price}￥</del>
+                            <p>${atem.short_title}</p>
+                            <div class="ljnr">
+                                <span class="ljzx" href="${atem.item_url}">立即购买</span>
+                                <span class="dp" href="">${atem.shop_title}</span>
                             </div>
-                        </div>
+                        </a>
+                    </div>
                             `
                     )
                 })
@@ -149,18 +149,18 @@ $(".yemeify>samp").click(function () {
                     $(".nrzs1").html(
                         $(".nrzs1").html() +
                         `
-                            <div class="col-lg-3 col-md-4 col-sm-6">
-                            <div class="text text1">
-                                <img src="${atem.pict_url}" alt="">
-                                <span class="yj">${atem.zk_final_price}￥</span>
-                                <del class="xj">${atem.reserve_price}￥</del>
-                                <p>${atem.short_title}</p>
-                                <div class="ljnr">
-                                    <a class="ljzx" href="${atem.item_url}">立即购买</a>
-                                    <a class="dp" href="">${atem.shop_title}</a>
-                                </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                        <a class="text text1" href="./cpxqy.html?yousb=${atem.item_id}" style="text-decoration: none;>
+                            <img src="${atem.pict_url}" alt="">
+                            <span class="yj">${atem.zk_final_price}￥</span>
+                            <del class="xj">${atem.reserve_price}￥</del>
+                            <p>${atem.short_title}</p>
+                            <div class="ljnr">
+                                <span class="ljzx" href="${atem.item_url}">立即购买</span>
+                                <span class="dp" href="">${atem.shop_title}</span>
                             </div>
-                        </div>
+                        </a>
+                    </div>
                             `
                     )
                 })
